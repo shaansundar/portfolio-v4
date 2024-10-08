@@ -29,11 +29,9 @@ export default function Home() {
   const { pause, setPause } = useContext(PauseContext);
   const [toast, setToast] = useState<boolean>(true);
 
-  console.log("🚀 ~ Home ~ dark:", dark);
-
   return (
     <div className={clsx(dark && "dark", "overflow-y-hidden")}>
-      <ToastComponent/>
+      <ToastComponent />
       <HeroMarqueeContainer />
       <div className="overflow-hidden w-screen z-10 h-screen flex gap-8 items-center justify-start">
         <NavBar />
@@ -58,8 +56,9 @@ export default function Home() {
               <h2 className="font-bold text-lg">Optical Illusion</h2>{" "}
             </div>
             <p className="text-themeBlue-11 text-sm">
-              Focus on the crosshair and click "Pause" You may notice the text
-              appears to continue moving slowly
+              {
+                "Focus on the crosshair and click 'Pause' You may notice the text appears to continue moving slowly"
+              }
             </p>
             <button
               onClick={() => setPause(!pause)}

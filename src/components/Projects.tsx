@@ -76,7 +76,7 @@ const Projects = (props: Props) => {
             <p className="w-full">
               Spearheaded the development of the{" "}
               <b className="font-bold text-themeBlue-9">
-                Biconomy SDK's Dashboard
+                {"Biconomy SDK's Dashboard"}
               </b>
               , utilizing user-centric design principles, it captured over 45%
               of the market and reached 4.9M+ deployed wallets
@@ -125,17 +125,18 @@ const Projects = (props: Props) => {
       logo: "ethernaut",
       desc: (
         <ul className="text-xl flex flex-col h-full gap-4">
-          
           <li className="flex items-start w-full gap-2">
             <CaretRightIcon className="size-8" />
             <p className="w-full">
-              Was responsible for implementing the redesign of the website from an initial Bootstrap design
+              Was responsible for implementing the redesign of the website from
+              an initial Bootstrap design
             </p>
           </li>
           <li className="flex items-start w-full gap-2">
             <CaretRightIcon className="size-8" />
             <p className="w-full">
-              Am one of the largest contributors to the open-source repository (by lines of code)
+              Am one of the largest contributors to the open-source repository
+              (by lines of code)
             </p>
           </li>
         </ul>
@@ -165,6 +166,7 @@ const Projects = (props: Props) => {
       <div className="w-28 rounded-xl h-full gap-2 flex flex-col items-center">
         {projectsArray.map((item, index) => (
           <button
+            key={index}
             onClick={() => {
               setEmulateItem(undefined);
               setOpenItem(item);

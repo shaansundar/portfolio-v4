@@ -29,8 +29,9 @@ const ToastComponent = () => {
         </Toast.Title>
         <Toast.Description asChild>
           <p className="text-themeBlue-11 text-sm">
-            Focus on the crosshair and click "Pause" You may notice the text
-            appears to continue moving slowly
+            {
+              "Focus on the crosshair and click 'Pause' You may notice the text appears to continue moving slowly"
+            }
           </p>
         </Toast.Description>
       </Toast.Root>
