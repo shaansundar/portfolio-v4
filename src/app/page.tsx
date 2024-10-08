@@ -22,15 +22,18 @@ import {
   PauseIcon,
   PlayIcon,
 } from "@radix-ui/react-icons";
+import ToastComponent from "@/components/Toast";
 
 export default function Home() {
   const { dark, setDark } = useContext(DarkContext);
   const { pause, setPause } = useContext(PauseContext);
+  const [toast, setToast] = useState<boolean>(true);
 
   console.log("🚀 ~ Home ~ dark:", dark);
 
   return (
-    <div className={clsx(dark && "dark")}>
+    <div className={clsx(dark && "dark", "overflow-y-hidden")}>
+      <ToastComponent/>
       <HeroMarqueeContainer />
       <div className="overflow-hidden w-screen z-10 h-screen flex gap-8 items-center justify-start">
         <NavBar />

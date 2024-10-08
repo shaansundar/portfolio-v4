@@ -4,6 +4,7 @@ import "./globals.css";
 import DarkContextProvider from "./context/darkContext";
 import PauseContextProvider from "./context/pauseContext";
 import TabContextProvider from "./context/tabContext";
+import * as Toast from "@radix-ui/react-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,9 @@ export default function RootLayout({
       <TabContextProvider>
         <PauseContextProvider>
           <DarkContextProvider>
-            <body className={inter.className}>{children}</body>
+            <Toast.Provider swipeDirection="right" duration={5000}>
+              <body className={inter.className}>{children}</body>
+            </Toast.Provider>
           </DarkContextProvider>
         </PauseContextProvider>
       </TabContextProvider>

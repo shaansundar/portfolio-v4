@@ -28,7 +28,7 @@ export const HeroMarqueeContainer = () => {
   );
 
   return (
-    <div className="absolute -z-10 flex bg-themeBlue-4 dark:bg-themeBlue-11 flex-col items-center justify-center gap-4 w-full h-full overflow-y-auto">
+    <div className="absolute -z-10 flex bg-themeBlue-4 dark:bg-themeBlue-11 flex-col items-center justify-center gap-4 w-full h-full overflow-y-hidden">
       <HeroMarquee
         direction={direction[0]}
         speed={speed[0]}
