@@ -17,7 +17,7 @@ function About({}: Props) {
     run();
   }, []);
   return (
-    <div className="w-full transition-transform relative h-full flex gap-4 items-center p-8 rounded-xl">
+    <div className="w-full transition-transform bg-themeBlue-2 relative h-full flex gap-4 items-center p-8 rounded-xl">
       {/* <h1 className="text-[384px] text-themeBlue-11 opacity-5 font-extrabold absolute right-8 -bottom-28 align-text-bottom">
         About
       </h1> */}

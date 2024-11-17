@@ -24,7 +24,7 @@ const Container = (props: Props) => {
   return (
     <div
       className={clsx(
-        "bg-themeBlue-2 h-4/5 mr-4 z-20 transition-all ease-in-out rounded-xl duration-300",
+        "h-4/5 mr-4 z-20 transition-all ease-in-out rounded-xl duration-300",
         tab === "Close" ? "w-0" : "w-5/6"
       )}
     >
