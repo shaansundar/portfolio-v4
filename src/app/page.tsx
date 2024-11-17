@@ -36,7 +36,7 @@ export default function Home() {
       <div className={clsx(dark && "dark", "overflow-y-hidden hidden xl:flex")}>
         <ToastComponent />
         <HeroMarqueeContainer />
-        <div className="overflow-hidden w-screen z-10 h-screen flex gap-8 items-center justify-start">
+        <div className="overflow-hidden w-screen z-20 h-screen flex gap-8 items-center justify-start">
           <NavBar />
           <Container />
         </div>
